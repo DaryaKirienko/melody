@@ -135,3 +135,91 @@ body {
   padding: 16px 36px;
   cursor: pointer;
 }
+
+.footer {
+  margin-top: 94px;
+  background-color: #d7d7d7;
+  border-top: 4px solid #3596f5;
+}
+
+.footer-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.connection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 56px;
+}
+
+.footer-logo {
+  width: 65px;
+  height: 65px;
+  margin-right: 37px;
+}
+
+.phone {
+  margin-right: 59px;
+}
+
+.phone p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #635854;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.phone a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #635854;
+  text-decoration: none;
+}
+
+.social-button {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.social-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 73px;
+  list-style: none;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #635854;
+}
+
+path.current-floor {
+  opacity: 1;
+}
