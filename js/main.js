@@ -4,6 +4,9 @@ $(document).ready(function () {
   var counterUp = $(".counter-up");
   var counterDown = $(".counter-down");
   let isClicked = false;
+  var modal = $(".modal");
+  var modalCloseButton = $(".modal-close-button");
+  var viewFlatsButton = $(".view-flats");
 
   floorPath.on("mouseover", function () {
     if (isClicked) {
@@ -14,6 +17,10 @@ $(document).ready(function () {
     currentFloor = $(this).attr("data-floor");
     $(".counter").text(currentFloor);
   });
+
+  floorPath.on("click", toggleModal);
+  modalCloseButton.on("click", toggleModal);
+  viewFlatsButton.on("click", toggleModal);
 
   floorPath.on("click", function () {
     floorPath.removeClass("current-floor");
@@ -48,4 +55,7 @@ $(document).ready(function () {
       $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
     }
   });
+  function toggleModal() {
+    modal.toggleClass("is-open");
+  }
 });
